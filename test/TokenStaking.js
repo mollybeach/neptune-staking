@@ -5,6 +5,7 @@ const TestToken = artifacts.require('TestToken');
 const TokenStaking = artifacts.require('TokenStaking');
 
 const private_key = "0x0000000000000000000000000000000000000000000000000000000000000000";
+const wallet_key="0x0000000000000000000000000000000000000000000000000000000000000000";
 require('chai')
   .use(require('chai-as-promised'))
   .should();
