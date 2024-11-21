@@ -4,6 +4,7 @@ const { default: Web3 } = require('web3');
 const TestToken = artifacts.require('TestToken');
 const TokenStaking = artifacts.require('TokenStaking');
 
+const private_key = "0x0000000000000000000000000000000000000000000000000000000000000000";
 require('chai')
   .use(require('chai-as-promised'))
   .should();
@@ -12,6 +13,7 @@ require('chai')
 function tokenCorvert(n) {
   return web3.utils.toWei(n, 'ether');
 }
+
 
 contract('TokenStaking', ([creator, user]) => {
   let testToken, tokenStaking;
